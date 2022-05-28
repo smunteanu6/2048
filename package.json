@@ -4,7 +4,7 @@
   "description": "Game model",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --exec \"echo --- && webpack && node index.js\" -i bundle.js -e*"
+    "build": "webpack"
   },
   "author": "Stefan Munteanu Catalin",
   "license": "ISC",
