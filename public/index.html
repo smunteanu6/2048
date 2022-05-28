@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./src/css/index.css">
+  <script src="./bundle.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div id="root" class="flex-column" style="height: 100vh;">
+    <div id="menu-bar">
+      <div><span>Score:</span>&nbsp;<span id="score">0</span></div>
+      <div><span>High score:</span>&nbsp;<span id="high-score">0</span></div>
+      <button id="restart-button" style="padding: 5px 8px; border-radius: 3px; border: 2px solid white;">Restart</button>
+    </div>
+    <div style="margin: auto;">
+      <div id="active-grid"></div>
+      <div id="placeholder-grid"></div>
+    </div>
+    <div id="game-over" style="display: none; opacity: 0;">Game over!</div>
+  </div>
+</body>
+</html>

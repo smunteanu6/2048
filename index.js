@@ -1,0 +1,11 @@
+const fs = require('fs');
+const express = require('express');
+
+const port = 3000;
+const app = express();
+
+app.use(express.static('public'));
+
+app.listen(port, () => {
+  console.log(`Listening for requests from http://localhost:${port}/`);
+});
