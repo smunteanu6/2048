@@ -1,0 +1,14 @@
+{
+  "backgroundColor": [
+    "#ece4d9", "#ece2c7", "#e9b373", "#e9985d",
+    "#e97f5b", "#e76233", "#e7d267", "#e7ce52",
+    "#e6cb38", "#e0c532", "#3c3a32", "#3c3a32",
+    "#3c3a32", "#3c3a32", "#3c3a32", "#3c3a32"
+  ],
+  "color": [
+    "#756e64", "#756e64", "#ffffff", "#ffffff",
+    "#ffffff", "#ffffff", "#ffffff", "#ffffff",
+    "#ffffff", "#ffffff", "#ffffff", "#ffffff",
+    "#ffffff", "#ffffff", "#ffffff", "#ffffff"
+  ]
+}

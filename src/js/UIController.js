@@ -1,18 +1,7 @@
-import CreateElement from '@lib/CreateElement'
 import anime from 'animejs/lib/anime.es.js';
 import List from '@lib/List';
-
-const texture = {
-  backgroundColor: [ '#ece4d9', '#ece2c7', '#e9b373',
-    '#e9985d', '#e97f5b', '#e76233', '#e7d267',
-    '#e7ce52', '#e9985d', '#e0c532', '#3c3a32',
-    '#3c3a32', '#3c3a32', '#3c3a32', '#3c3a32' ],
-  color: [ '#756e64', '#756e64', '#ffffff',
-    '#ffffff', '#ffffff', '#ffffff', '#ffffff',
-    '#ffffff', '#ffffff', '#ffffff', '#ffffff',
-    '#ffffff', '#ffffff', '#ffffff', '#ffffff' ]
-}
-
+import CreateElement from '@lib/CreateElement'
+import textures from '../json/textures.json';
 
 function UIController () {
   
@@ -39,7 +28,7 @@ function UIController () {
       </div>
     */
 
-    const element = CreateElement('div', { style: `top: ${placeholder.offsetTop}px; left: ${placeholder.offsetLeft}px;`, position: position }, [ CreateElement('div', { class: 'cell', style: `background-color: ${texture.backgroundColor[colorID]}; color: ${texture.color[colorID]}; transform: scale(0,0);`, textContent: value }) ]);
+    const element = CreateElement('div', { style: `top: ${placeholder.offsetTop}px; left: ${placeholder.offsetLeft}px;`, position: position }, [ CreateElement('div', { class: 'cell', style: `background-color: ${textures.backgroundColor[colorID]}; color: ${textures.color[colorID]}; transform: scale(0,0);`, textContent: value }) ]);
 
     element.color = colorID;
     dom.activeGrid.append(element);
@@ -85,8 +74,8 @@ function UIController () {
         beforeEl.remove();
         afterEl.children[0].innerText *= 2;
         afterEl.color++;
-        afterEl.children[0].style.backgroundColor = texture.backgroundColor[afterEl.color];
-        afterEl.children[0].style.color = texture.color[afterEl.color];
+        afterEl.children[0].style.backgroundColor = textures.backgroundColor[afterEl.color];
+        afterEl.children[0].style.color = textures.color[afterEl.color];
       }
     }));
   }
