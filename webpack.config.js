@@ -5,7 +5,7 @@ module.exports = {
   mode: 'development',
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'public'),
+    path: __dirname,
   },
   resolve: {
     alias: {
