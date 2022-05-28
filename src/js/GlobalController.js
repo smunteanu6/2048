@@ -43,7 +43,6 @@ function GlobalController (UI, Game) {
 
   function gameOver() {
     initializationInProgress = true;
-    console.log('game over')
     UI.gameOver();
   }
 
@@ -71,9 +70,6 @@ function GlobalController (UI, Game) {
     if (event.code == 'KeyW' || event.code == 'ArrowUp') turn('up');
 
     if (!free.length && !Game.checkContinuity()) return gameOver();
-    // DEBUG
-    for (const arr of Game.matrix) console.log(arr.map(el => el ? el : 0));
-    console.log('');
   });
 
   UI.dom.restartButton.addEventListener('click', initialize);
